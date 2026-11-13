@@ -1,0 +1,354 @@
+/**
+ * IN9 Cookies — Admin Stylesheet
+ * Strict adherence to SaaS Design System
+ */
+
+.in9-admin-wrap {
+    max-width: 1040px;
+    margin: 24px 20px 40px 0;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #0b3558;
+}
+
+.in9-admin-wrap * {
+    box-sizing: border-box;
+}
+
+/* Header */
+.in9-admin-header {
+    margin-bottom: 24px;
+}
+
+.in9-admin-badge-lgpd {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #edf7f0;
+    color: #0e7045;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 11.5px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.in9-admin-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0b3558;
+    margin: 0 0 6px 0;
+    line-height: 1.2;
+}
+
+.in9-admin-subtitle {
+    font-size: 14px;
+    color: #476788;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Alerts */
+.in9-admin-alert {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 13.5px;
+}
+
+.in9-alert-success {
+    background-color: #edf7f0;
+    color: #0e7045;
+    border: 1px solid #c3e6cb;
+}
+
+.in9-alert-success svg {
+    flex-shrink: 0;
+    stroke: #0e7045;
+}
+
+.in9-alert-success p {
+    margin: 2px 0 0 0;
+    font-size: 12.5px;
+    opacity: 0.9;
+}
+
+/* Tabs */
+.in9-admin-tabs-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #d4e0ed;
+    margin-bottom: 24px;
+    overflow-x: auto;
+}
+
+.in9-tab-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #476788;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    white-space: nowrap;
+}
+
+.in9-tab-link:hover {
+    color: #0b3558;
+}
+
+.in9-tab-link.is-active {
+    color: #006bff;
+    border-bottom-color: #006bff;
+}
+
+.in9-tab-link svg {
+    stroke: currentColor;
+}
+
+/* Cards */
+.in9-admin-card {
+    background: #ffffff;
+    border: 1px solid #d4e0ed;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(11, 53, 88, 0.04);
+    overflow: hidden;
+}
+
+.in9-card-header {
+    padding: 24px 28px;
+    border-bottom: 1px solid #d4e0ed;
+    background: #ffffff;
+}
+
+.in9-card-header h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0b3558;
+    margin: 0 0 4px 0;
+}
+
+.in9-card-header p {
+    font-size: 13.5px;
+    color: #476788;
+    margin: 0;
+}
+
+.in9-card-body {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.in9-card-footer {
+    padding: 18px 28px;
+    background: #f8f9fb;
+    border-top: 1px solid #d4e0ed;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Form Controls */
+.in9-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.in9-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0b3558;
+}
+
+.in9-input,
+.in9-select,
+.in9-textarea {
+    width: 100%;
+    padding: 9px 12px;
+    font-size: 13.5px;
+    border: 1px solid #d4e0ed;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #0b3558;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.in9-input:focus,
+.in9-select:focus,
+.in9-textarea:focus {
+    outline: none;
+    border-color: #006bff;
+    box-shadow: 0 0 0 3px rgba(0, 107, 255, 0.15);
+}
+
+.in9-code-font {
+    font-family: Consolas, Monaco, "Courier New", monospace !important;
+    font-size: 12.5px;
+    line-height: 1.4;
+    background-color: #f8f9fb;
+}
+
+.in9-field-hint {
+    font-size: 12px;
+    color: #476788;
+    margin: 4px 0 0 0;
+    line-height: 1.4;
+}
+
+.in9-grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.in9-grid-3col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .in9-grid-2col,
+    .in9-grid-3col {
+        grid-template-columns: 1fr;
+    }
+}
+
+.in9-divider-top {
+    padding-top: 16px;
+    border-top: 1px solid #d4e0ed;
+}
+
+.in9-subheading {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #0b3558;
+    margin: 0 0 4px 0;
+}
+
+/* Checkbox Label */
+.in9-checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.in9-checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    accent-color: #006bff;
+}
+
+.in9-checkbox-label strong {
+    font-size: 14px;
+    color: #0b3558;
+}
+
+/* Buttons */
+.in9-btn-admin {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    font-size: 13.5px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+.in9-btn-admin:active {
+    transform: scale(0.98);
+}
+
+.in9-btn-admin-primary {
+    background-color: #006bff;
+    color: #ffffff;
+}
+
+.in9-btn-admin-primary:hover {
+    background-color: #0056cc;
+}
+
+/* Category Boxes in Admin */
+.in9-cat-setting-box {
+    background: #f8f9fb;
+    border: 1px solid #d4e0ed;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.in9-cat-setting-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.in9-cat-setting-title .in9-input {
+    font-weight: 600;
+}
+
+.in9-admin-pill {
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.in9-pill-success {
+    background: #edf7f0;
+    color: #0e7045;
+}
+
+.in9-pill-info {
+    background: #f0f3f8;
+    color: #0b3558;
+}
+
+/* Guide */
+.in9-guide-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.in9-guide-section h3 {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #0b3558;
+    margin: 0 0 6px 0;
+}
+
+.in9-guide-section p {
+    font-size: 13px;
+    color: #476788;
+    margin: 0 0 8px 0;
+}
+
+.in9-code-block {
+    background: #f0f3f8;
+    border: 1px solid #d4e0ed;
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: #0b3558;
+    overflow-x: auto;
+}
