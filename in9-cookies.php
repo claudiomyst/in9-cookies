@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: IN9 Cookies & LGPD Privacy Manager
+ * Plugin Name: In9 Cookies & LGPD Privacy Manager
  * Plugin URI: https://in9midia.com
  * Description: Gerenciador de Consentimento e Privacidade (CMP) com bloqueio real de scripts, suporte a Google Consent Mode v2 e conformidade com a LGPD e ANPD.
  * Version: 1.0.0

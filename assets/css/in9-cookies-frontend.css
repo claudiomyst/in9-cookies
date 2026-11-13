@@ -71,7 +71,7 @@
 .in9-cookies-banner.in9-pos-bottom-left {
     bottom: 24px;
     left: 24px;
-    max-width: 460px;
+    max-width: 530px;
     width: calc(100% - 48px);
     border-radius: var(--in9-radius-modal);
 }
